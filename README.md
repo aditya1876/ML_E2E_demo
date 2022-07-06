@@ -5,7 +5,7 @@ Demo project to showcase E2E ML.
 ## Steps
 
 - [x] Create a GitHub project
-- [ ] Create a demo flask app
+- [x] Create a demo flask app
 
   - Create virtual env
 
@@ -44,7 +44,7 @@ Demo project to showcase E2E ML.
   #more commands -- www.git-scm.com/docs/gittutorial
   ```
 
-- [ ] Create Docker file for the app
+- [x] Create Docker file for the app
 
   - Create a new file in project folder called 'Dockerfile'
     - add the following in dockerfile
@@ -104,7 +104,7 @@ Demo project to showcase E2E ML.
   docker stop <container_id>
   ```
 
-- [ ] Create CICD pipeline using GitHub
+- [x] Create CICD pipeline using GitHub
   - we need the following information from heroku
     - Heroku_email = <herokuemail>
     - Heroku API key = Login>click on user-icon top right>account settings>Api key section>'Reveal'>copy the key
@@ -117,7 +117,7 @@ Demo project to showcase E2E ML.
   - Go to Actions tab> check if any actions are running> if not you can start from here and observer the output
   - check in heroku if the app is deployed.
   - run the app and check.
-- [ ] Create Heroku app for deployment
+- [x] Create Heroku app for deployment
   - login to heroku
   - create an app
 - [ ] Create structure for ML project
