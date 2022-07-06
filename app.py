@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])
 def index():
-    return "Machine Learning Project coming soon...."
+    return "CICD pipline established..."
 
 
 
