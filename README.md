@@ -69,7 +69,7 @@ Demo project to showcase E2E ML.
     docker build -t <image_name>:<tagname> .
 
     #image_name should be lowercase
-    #tagname is usually 'latest'
+    #tagname is usually 'latest'. can be anything
     # . at the end signifies ??
     # Example - docker build -t ml-project:latest .
     ```
@@ -109,9 +109,17 @@ Demo project to showcase E2E ML.
     - Heroku_email = <herokuemail>
     - Heroku API key = Login>click on user-icon top right>account settings>Api key section>'Reveal'>copy the key
     - heroku app name = your app name
+  - Create a folder called .github
+  - Create folder inside .github called workflows
+  - Create main.yaml file inside workflows folder
+  - Populate the yaml file and push to github
+  - Set up secrets in github (variable names should exactly match the variables used in yaml file)
+  - Go to Actions tab> check if any actions are running> if not you can start from here and observer the output
+  - check in heroku if the app is deployed.
+  - run the app and check.
 - [ ] Create Heroku app for deployment
   - login to heroku
-  -
+  - create an app
 - [ ] Create structure for ML project
 - [ ] Build ML pipeline
 
