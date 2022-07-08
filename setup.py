@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 #this file is similar to pip install -r requirements.txt
@@ -12,7 +12,6 @@ PROJECT_NAME="housing-predictor"
 VERSION="0.0.1"
 AUTHOR="Aditya N"
 DESCRIPTION="This is the first Machine Learning project for FSDS batch"
-PACKAGES=["housing"]
 REQUIREMENT_FILE_NAME="requirements.txt"
 
 def get_requirements_list()->List[str]:
@@ -30,6 +29,6 @@ setup(
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages(), #looks for __init__.py files in all folders of the projects and installs them as packages
     install_requires=get_requirements_list()
 )
