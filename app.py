@@ -1,5 +1,7 @@
 from flask import Flask
 from housing.logger import logging
+import sys
+from housing.exception import HousingException
 
 app=Flask(__name__)
 
@@ -7,6 +9,11 @@ app=Flask(__name__)
 
 @app.route("/",methods=['GET','POST'])
 def index():
+    try:
+        raise Exception("We are testing custom exception")
+    except Exception as e:
+        housing=HousingException(e, sys)
+        logging.info(housing.error_message)
     logging.info("Opening the homepage...")
     return "CICD pipline established..."
 
