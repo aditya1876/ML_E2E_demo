@@ -42,3 +42,25 @@ class HousingException(Exception):
     def __repr__(self)->str:
         return HousingException.__name__.str() 
 
+    """
+    Explaination of __str__ and __repr__ functions above:
+
+    IN JUPYTER NOTEBOOK, exectute the following code
+
+    class Demo():
+        def __str__(self):
+            return "In str fn"
+        
+        def __repr__(self):
+            return "In repr function"
+
+    d=Demo()
+
+    #EXECUTE IN A CELL 
+    d
+    #output - In repr function
+
+    #EXECUTE IN A CELL
+    print(d)
+    #output - In str fn
+    """
