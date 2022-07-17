@@ -124,3 +124,42 @@ Demo project to showcase E2E ML.
 - [ ] Build ML pipeline
 
 ## Process
+
+1. Create Github project
+2. Clone to local
+3. Create virtual env for the project
+4. Create and update setup.py file
+5. Create base flask app
+
+   - Create requirements.txt file and add package names to it
+
+6. Create and update .gitignore file
+7. Create and populate Dockerfile and .dockerignore
+8. Create app folder structure:
+
+   - Create main project folder ('housing')
+   - create `__init.py__` inside this folder
+   - Create folders inside main folder:
+     - component
+     - config
+     - entity
+     - exception
+     - logger
+     - pipeline
+   - Create `__init.py` inside each sub folder
+
+9. Update logger folder.
+
+   - Update `__init__.py` with logging code.
+   - Add the logs in .gitignore file.
+
+10. Update exception folder
+
+    - Update `__init__.py` with specific exception for the project.
+
+11. Run- `python setup.py install` and verify creation of more folders and egg-info. Add them to .gitignore
+
+12. Create Heroku app
+13. Create a CICD pipeline using GitHub actions
+14. Verify the app can be deployed to Heroku whenever code is pushed to github main branch
+15. Create folder called 'notebook' outside the 'housing' folder
