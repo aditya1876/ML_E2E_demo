@@ -115,7 +115,27 @@ class Configuration:
             raise HousingException(e, sys) from e
 
     def get_data_validation_config(self) -> DataValidationConfig:
-        pass
+        """This function gets the config information from the constant folder and creates a namedtuple for data validation component    
+
+        Returns:
+            DataValidationConfig: namedtuple that stores the config values for data validation component
+        """
+        try:
+            #create the folder structure for data validation artifacts
+            data_validaion_atrifact_dir=os.path.join(
+                self.training_pipeline_config.artifact_dir, #housing/artifact
+                DATA_VALIDATION_SCHEMA_DIR_KEY, #config
+                self.time_stamp #timestamp
+            )
+            # /housing/artifact/config/timestamp
+
+            
+            data_validation_info=self.config_info[DATA_VALIDATION_CONGIF_KEY]
+
+            
+
+        except Exception as e:
+            raise HousingException(e, sys) from e
 
     def get_data_transformation_config(self) -> DataTransformationConfig:
         pass
